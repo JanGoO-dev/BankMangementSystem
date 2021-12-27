@@ -1,15 +1,420 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!"/>
+<VBox prefHeight="410.0" prefWidth="633.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="787.0" spacing="30.0" style="-fx-background-color: #dedede;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="38.0" text="Click the LOGIN button on the right to perform available operations">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <Button focusTraversable="false" mnemonicParsing="false" text="LOGIN">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+      <TabPane prefHeight="305.0" prefWidth="787.0" style="-fx-background-color: #dedede#dedede;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Personal Details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="251.0" prefWidth="593.0">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0" prefHeight="238.0" prefWidth="563.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Name:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Asad Ali" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Father's Name:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Atta Fareed" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="38.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Mother's Name:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Zikra Bibi" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="66.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="CNIC:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="36402-7868711-9" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="94.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Age:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="22" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="122.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="DOB:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="04-03-1999" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="150.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Gender:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Male" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="150.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Marital Status:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Singal" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Account Details">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="251.0" prefWidth="593.0">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0" prefHeight="238.0" prefWidth="564.0">
+                           <children>
+                              <VBox prefHeight="74.0" prefWidth="275.0">
+                                 <children>
+                                    <Label text="Balance" textFill="#545454">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="70.0" prefWidth="546.0" text="6,000" textAlignment="CENTER" textFill="#616161">
+                                       <font>
+                                          <Font name="System Bold" size="48.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Status:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Active" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="66.0" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Account Type:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Saving" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="17.0" prefWidth="275.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Account ID:" textFill="#2f2f2fbd">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="2345701-3344" textFill="#464646">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Deposit Money">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="236.0" prefWidth="566.0">
+                           <children>
+                              <VBox prefHeight="196.0" prefWidth="315.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label text="Account Number" textFill="#616161">
+                                             <padding>
+                                                <Insets bottom="4.0" left="4.0" right="10.0" top="4.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField promptText="XXXXXXX-XXXX">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                                             </padding>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label text="Deposit Amount" textFill="#616161">
+                                             <padding>
+                                                <Insets bottom="4.0" left="4.0" right="10.0" top="4.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField promptText="2000">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                                             </padding>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="315.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" text="Deposit Now">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Withdraw Money">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="236.0" prefWidth="566.0">
+                           <children>
+                              <VBox prefHeight="196.0" prefWidth="315.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label text="Account Number" textFill="#616161">
+                                             <padding>
+                                                <Insets bottom="4.0" left="4.0" right="10.0" top="4.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField promptText="XXXXXXX-XXXX">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                                             </padding>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label text="Withdraw Amount" textFill="#616161">
+                                             <padding>
+                                                <Insets bottom="4.0" left="4.0" right="10.0" top="4.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField promptText="2000">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                                             </padding>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="315.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" text="Withdraw Now">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
 </VBox>
