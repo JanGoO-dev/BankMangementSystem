@@ -10,6 +10,8 @@ module com.ourbank.bankmanagementsystem {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
+    requires java.sql;
+
     opens com.ourbank.bankmanagementsystem to javafx.fxml;
     exports com.ourbank.bankmanagementsystem;
 }
